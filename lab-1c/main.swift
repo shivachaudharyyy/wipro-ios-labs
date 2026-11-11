@@ -6,11 +6,11 @@ course.sort()
 
 print("Courses:" , course)
 print("Filtered:" ,course.filter{ $0.contains("i")})
-print("Search Swift:".course.contains("Swift"))
+print(course.contains("Swift"))
 
-let id: Set<Int> =[101,102,103,101,104,102]
-print("Student ids:" id)
-print("Unique Students:" id.count)
+let id: Set<Int> = [101,102,103,101,104,102]
+print("Student ids:" ,id)
+print("Unique Students:", id.count)
 
 let marks=[101:85,102:90,103:70,104:60]
 var topId=0;
@@ -25,13 +25,13 @@ for(ids,mark)in marks{
 }
 
 print("Topper ID:",topId)
-print("Topper Marks:"highMark)
+print("Topper Marks:",highMark)
 
-let below40=mark.filter{ $0.value<40 }
+let below40=marks.filter{ $0.value<40 }
 print("Students Below 40:" ,below40)
 
 
-enum Priorty{
+enum Priority{
   case high,medium ,low
 }
 let task=Priority.high
@@ -51,7 +51,7 @@ enum Result{
 }
 let res=Result.success("Data Loaded")
 
-switch response{
+switch res{
   case .success(let message):
     print(message)
   case .error(let message):
