@@ -34,3 +34,26 @@ print("Students Below 40:" ,below40)
 enum Priorty{
   case high,medium ,low
 }
+let task=Priority.high
+
+switch task{
+  case .high:
+    print("High Priority")
+  case .medium:
+    print("Medium Priority")
+  case .low:
+    print("Low Priority")
+}
+
+enum Result{
+  case success(String)
+  case error(String)
+}
+let res=Result.success("Data Loaded")
+
+switch response{
+  case .success(let message):
+    print(message)
+  case .error(let message):
+    print(message)
+}
