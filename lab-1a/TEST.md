@@ -17,6 +17,5 @@
 | true&&false | false |
 
 ##Result
-
 The program calculates total marks, average,
 percentage, grade and pass or fail result.
