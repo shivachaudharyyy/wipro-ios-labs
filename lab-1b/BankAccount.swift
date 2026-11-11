@@ -5,7 +5,7 @@ public class BankAccount{
     if balance < 0 {
       return nil
     }
-    self.balance=balance
+    self.balance= balance
   }
 
   fileprivate func isValid(_ amount: Double) -> Bool {
