@@ -56,7 +56,7 @@ print("Student name: \(studentName ?? "Unknown")")
 let defaultMarks = findMarks(id: 10) ?? 0
 print("Default marks: \(defaultMarks)")
 
-// 3. Handling missing dictionary key
+// Handling missing dictionary key
 var studentInfo = [
     "name": "Rahul",
     "course": "Swift"
@@ -74,7 +74,7 @@ if userText.isEmpty {
     print(userText)
 }
 
-// 4. Avoiding force unwrapping
+//  Avoiding force unwrapping
 
 let optionalValue: Int? = nil
 
@@ -84,7 +84,7 @@ if let value = optionalValue {
     print("Value is missing")
 }
 
-// 5. Optional profile model (Extension)
+//  Optional profile model (Extension)
 struct Profile {
     var name: String
     var address: String?
